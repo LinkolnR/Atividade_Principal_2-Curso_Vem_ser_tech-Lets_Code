@@ -2,13 +2,13 @@
 
 html, body {
     height: 100%;
-    width: 92%;
+    width: 90%;
     font-family: 'Poppins', sans-serif;
     color: #222;
     }
 
 body {
-    margin: 0 8%;
+    margin: 0 10%;
 }
 
 .navbar {
@@ -31,9 +31,12 @@ body {
 .carousel-caption {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    margin: auto;
 }
 
+.carousel-caption h1, .carousel-caption h3 {
+    text-shadow: 1px 1px 10px #000;
+}
 
 
 /*---Media Queries --*/

@@ -17,12 +17,12 @@
 
 </head>
 
-<body class="padding">
+<body>
     
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/bootstrap-logo.svg" height="44px" alt="logo do site"></a>
+            <a class="navbar-brand" href="#"><img src="imagem/logo-travel.jpeg" height="60px" alt="logo do site"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,35 +47,66 @@
     </ul>
 
     <div class="carousel-inner">
+        
         <div class="carousel-item active">
             <img src="imagem/plage-et-pirogue.jpg" alt="kribi vila dos pescadores">
             <div class="carousel-caption">
-                <h1 class="display-2">Memórias</h1>
+                <h1 class="display-3">Memórias</h1>
                 <h3>Kribi, Camarões</h3>
+                <br>
+                <!-- <button type="button" class="btn btn-outline-light btn-lg">Conheça</button> -->
+                <button type="button" class="btn btn-primary btn-lg">conheça</button>
                 <br><br>
-                <button type="button" class="btn btn-outline-light btn-lg">Conheça</button>
-                <!-- <button type="button" class="btn btn-primary btn-lg">Compre agora!</button> -->
             </div>
         </div>
+
         <div class="carousel-item">
-            <img src="img/background2.png" alt="banner 2">
+            <img src="imagem/maldivas-capa2019-03.jpg" alt="Maafushi Ilhas Maldivas">
+            <div class="carousel-caption">
+                <h1 class="display-3">Experiências</h1>
+                <h3>Maafushi, Ilhas Maldivas</h3>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg">conheça</button>
+                <br><br>
+            </div>
         </div>
+
         <div class="carousel-item">
-            <img src="img/background3.png" alt="banner 3">
+            <img src="imagem/Mostardas.jpg" alt=" foto da Praia de Bocupari">
+            <div class="carousel-caption">
+                <h1 class="display-3">Liberdade</h1>
+                <h3>Praia de Bocupari, Mostardas-RS</h3>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg">conheça</button>
+                <br><br>
+            </div>
         </div>
+    
     </div>
+
 </div>
 
 <!--- Jumbotron -->
 <div class="container-fluid">
     <div class="row jumbotron">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
             <p>Um site onde escolhemos os destinos mais exóticos e os preparamos em pacotes especiais que se encaixam em cada roteiro de viagem!</p>
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <div class="dropdown col-xs-12 col-sm-9 col-md-6 col-lg-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Conheça os destinos
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Kribi</a>
+              <a class="dropdown-item" href="#">Maafushi</a>
+              <a class="dropdown-item" href="#">Mostardas</a>
+            </div>
+          </div>
+
+        <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <a href="#"><button type="button" class="btn btn-outline-secondary">Conheça os destinos</button></a>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -154,36 +185,13 @@
 <hr class="my-4">
 
 <!--- Fixed background -->
-<figure>
+<!-- <figure>
     <div class="fixed-wrap">
         <div id="fixed">
 
         </div>
     </div>
-</figure>
-
-
-<!--- Emoji Section -->
-<button class="fun" data-toggle="collapse" data-target="#emoji">Clique para distrair...</button>
-
-<div id="emoji" class="collapse">
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/panda.gif" alt="gif panda">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/poo.gif" alt="gif cocozinho">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/unicorn.gif" alt="gif unicornio">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-                <img class="gif" src="img/gif/chicken.gif" alt="gif galinha">
-            </div>
-        </div>
-    </div>
-</div>
+</figure> -->
 
 <!--- Meet the team -->
 <div class="container-fluid padding">
@@ -196,43 +204,63 @@
     </div>
 </div>
 
-<!--- Cards -->
-<div class="container-fluid padding">
+ <!--- Cards -->
+ <div class="container-fluid padding">
     <div class="row padding">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/team1.png" alt="Funcionario 1 do time">
-                <div class="card-body">
-                    <h4 class="card-title">Zé Fulano</h4>
-                    <p>Zé é um engenheiro de software com 20 anos de experiência.</p>
-                    <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-                </div>
-            </div>
+      <div class="col-sm-9 col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/team1.png" alt="Rodrigo">
+          <div class="card-body">
+            <h4 class="card-title">Rodrigo Rangel</h4>
+            <p>Zé é um engenheiro de software com 20 anos de experiência.</p>
+            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/team2.png" alt="Funcionario 2 do time">
-                <div class="card-body">
-                    <h4 class="card-title">Dona Moça</h4>
-                    <p>Moça é uma designer entendida com 10 anos de pé na estrada.</p>
-                    <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-                </div>
-            </div>
+      <div class="col-sm-9 col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/team1.png" alt="Ana Clara">
+          <div class="card-body">
+            <h4 class="card-title">Ana Clara</h4>
+            <p>Moça é uma designer entendida com 10 anos de pé na estrada.</p>
+            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-4">
-            <div class="card">
-                <img class="card-img-top" src="img/team3.png" alt="Funcionario 3 do time">
-                <div class="card-body">
-                    <h4 class="card-title">Ricardão Fião</h4>
-                    <p>Ricardão é um empresário  com 5 aninhos de coisinhas em andamento.</p>
-                    <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-                </div>
-            </div>
+      <div class="col-sm-9 col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/team1.png" alt="Milan">
+          <div class="card-body">
+            <h4 class="card-title">Milan</h4>
+            <p>Ricardão é um empresário  com 5 aninhos de coisinhas.</p>
+            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+
+      <div class="col-sm-9 col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/team1.png" alt="Giuliano">
+          <div class="card-body">
+            <h4 class="card-title">Giuliano</h4>
+            <p>Ricardão é um empresário  com 5 aninhos de coisinhas.</p>
+            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-9 col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="img/team1.png" alt="Lincoln">
+          <div class="card-body">
+            <h4 class="card-title">Lincoln</h4>
+            <p>Ricardão é um empresário  com 5 aninhos de coisinhas.</p>
+            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+          </div>
+        </div>
+      </div>
 
 <!--- Two Column Section -->
 
