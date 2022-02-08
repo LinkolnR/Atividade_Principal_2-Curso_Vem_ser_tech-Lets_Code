@@ -38,6 +38,43 @@ body {
     text-shadow: 1px 1px 10px #000;
 }
 
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.card-img-top {
+    border-radius: 10px;
+    
+}
+
+#foto-sobre-nos {
+    border-radius: 10px;
+    height: 65%;
+    float: right;
+    margin-top: 10px;
+}
+
+.texto-itravel {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#botao-sobre-nos {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    justify-content: center;
+}
+
+
+.texto-integrantes {
+    text-align: justify;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {

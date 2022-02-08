@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,20 @@
     <title>iTravel Viagens</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
     <script src="https://kit.fontawesome.com/1dead93722.js" crossorigin="anonymous"></script>
-	<link href="style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
 
 </head>
 
 <body>
-    
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
@@ -38,154 +41,181 @@
         </div>
     </nav>
 
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-    </ul>
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
 
-    <div class="carousel-inner">
-        
-        <div class="carousel-item active">
-            <img src="imagem/plage-et-pirogue.jpg" alt="kribi vila dos pescadores">
-            <div class="carousel-caption">
-                <h1 class="display-3">Memórias</h1>
-                <h3>Kribi, Camarões</h3>
-                <br>
-                <!-- <button type="button" class="btn btn-outline-light btn-lg">Conheça</button> -->
-                <button type="button" class="btn btn-primary btn-lg">conheça</button>
-                <br><br>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="imagem/plage-et-pirogue.jpg" alt="kribi vila dos pescadores">
+                <div class="carousel-caption">
+                    <h1 class="display-3">Memórias</h1>
+                    <h3>Kribi, Camarões</h3>
+                    <br>
+                    <!-- <button type="button" class="btn btn-outline-light btn-lg">Conheça</button> -->
+                    <button type="button" class="btn btn-primary btn-lg">conheça</button>
+                    <br><br>
+                </div>
             </div>
+
+            <div class="carousel-item">
+                <img src="imagem/maldivas-capa2019-03.jpg" alt="Maafushi Ilhas Maldivas">
+                <div class="carousel-caption">
+                    <h1 class="display-3">Experiências</h1>
+                    <h3>Maafushi, Ilhas Maldivas</h3>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg">conheça</button>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="imagem/Mostardas.jpg" alt=" foto da Praia de Bocupari">
+                <div class="carousel-caption">
+                    <h1 class="display-3">Liberdade</h1>
+                    <h3>Praia de Bocupari, Mostardas-RS</h3>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg">conheça</button>
+                    <br><br>
+                </div>
+            </div>
+
         </div>
 
-        <div class="carousel-item">
-            <img src="imagem/maldivas-capa2019-03.jpg" alt="Maafushi Ilhas Maldivas">
-            <div class="carousel-caption">
-                <h1 class="display-3">Experiências</h1>
-                <h3>Maafushi, Ilhas Maldivas</h3>
-                <br>
-                <button type="button" class="btn btn-primary btn-lg">conheça</button>
-                <br><br>
-            </div>
-        </div>
-
-        <div class="carousel-item">
-            <img src="imagem/Mostardas.jpg" alt=" foto da Praia de Bocupari">
-            <div class="carousel-caption">
-                <h1 class="display-3">Liberdade</h1>
-                <h3>Praia de Bocupari, Mostardas-RS</h3>
-                <br>
-                <button type="button" class="btn btn-primary btn-lg">conheça</button>
-                <br><br>
-            </div>
-        </div>
-    
     </div>
 
-</div>
-
-<!--- Jumbotron -->
-<div class="container-fluid">
-    <div class="row jumbotron">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
-            <p>Um site onde escolhemos os destinos mais exóticos e os preparamos em pacotes especiais que se encaixam em cada roteiro de viagem!</p>
-        </div>
-
-        <div class="dropdown col-xs-12 col-sm-9 col-md-6 col-lg-4">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Conheça os destinos
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Kribi</a>
-              <a class="dropdown-item" href="#">Maafushi</a>
-              <a class="dropdown-item" href="#">Mostardas</a>
+    <!--- Jumbotron -->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+                <p>Um site onde escolhemos os destinos mais exóticos e os preparamos em pacotes especiais que se
+                    encaixam em cada roteiro de viagem!</p>
             </div>
-          </div>
 
-        <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <div class="dropdown col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Conheça os destinos
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Kribi</a>
+                    <a class="dropdown-item" href="#">Maafushi</a>
+                    <a class="dropdown-item" href="#">Mostardas</a>
+                </div>
+            </div>
+
+            <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <a href="#"><button type="button" class="btn btn-outline-secondary">Conheça os destinos</button></a>
         </div> -->
-    </div>
-</div>
-
-<!--- Welcome Section -->
-<div class="container-fluid">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Escolhidos com carinho.</h1>
-        </div>
-
-        <hr>
-
-        <div class="col-12">
-            <p class="lead">Sejam bem vindos ao melhor site de viagens das Americas, conheçam nossos parceiros:</p>
         </div>
     </div>
-</div>
 
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-plane-departure"></i>
-            <h3>123 Milhas</h3>
-            <p>Parceiro 02</p>
+    <!--- COMENTADO talvez volte -->
+    <!-- <div class="container-fluid">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Escolhidos com carinho.</h1>
+            </div>
+
+            <hr>
+
+            <div class="col-12">
+                <p class="lead">Sejam bem vindos ao melhor site de viagens das Americas, conheçam nossos parceiros:</p>
+            </div>
         </div>
+    </div> -->
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <i class="fas fa-map-marked-alt"></i>
-            <h3>decolar.com</h3>
-            <p>Parceiro 02</p>
-        </div>
+    <!--- Three Column Section -->
+    <!-- <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-plane-departure"></i>
+                <h3>123 Milhas</h3>
+                <p>Parceiro 02</p>
+            </div>
 
-        <div class="col-sm-12 col-md-4">
-            <i class="fas fa-archway"></i>
-            <h3>Italia Airlines</h3>
-            <p>Parceiro 03</p>
-        </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>decolar.com</h3>
+                <p>Parceiro 02</p>
+            </div>
 
+            <div class="col-sm-12 col-md-4">
+                <i class="fas fa-archway"></i>
+                <h3>Italia Airlines</h3>
+                <p>Parceiro 03</p>
+            </div>
+
+        </div> -->
+
+
+    <!--- REMOVIDO -->
+
+    <hr class="my-4">
+
+    <div class="row justify-content-center">
+        <form class="col-md-6">
+            
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+
+           
+        </form>
     </div>
 
     <hr class="my-4">
 
-</div>
 
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-md-12 col-lg-6">
-            <h2>Se puder sonhar...</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis.
-                    Admodum accumsan disputationi eu sit. Vide
-                    electram sadipscing et per.Leite de capivaris,
-                    leite de mula manquis sem cabeça.
-                </p>
-                <p>Mussum Ipsum, cacilds vidis litro abertis.
-                    Admodum accumsan disputationi eu sit. Vide
-                    electram sadipscing et per.Leite de capivaris,
-                    leite de mula manquis sem cabeça.
-                </p>
-                <p>Mussum Ipsum, cacilds vidis litro abertis.
-                    Admodum accumsan disputationi eu sit. Vide
-                    electram sadipscing et per.Leite de capivaris,
-                    leite de mula manquis sem cabeça.
-                </p>
-                <br>
-                <a class="btn btn-primary" href="#">Saiba mais</a>
-        </div>
-
-        <div class="col-md-12 col-lg-6">
-            <img src="img/desk.png" alt="mulher ao computador" class="img-fluid">
-        </div>
-    </div>
-</div>
-
-<hr class="my-4">
-
-<!--- Fixed background -->
-<!-- <figure>
+    <!--- Fixed background -->
+    <!-- <figure>
     <div class="fixed-wrap">
         <div id="fixed">
 
@@ -193,82 +223,107 @@
     </div>
 </figure> -->
 
-<!--- Meet the team -->
-<div class="container-fluid padding">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Conheça nosso time</h1>
+    <!--Sobre nós-->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6 text-center">
+                <h2 class="texto-itravel">Quem Somos</h2>
+                <p class="texto-itravel">Somos a iTravel e faremos acontecer aquela sua viagem que antes nem parecia
+                    possível, mas agora é. Somos uma empresa de tecnologia aplicada ao universo de pacotes de viagem.
+                    Nascemos da ideia de que viajar é para todos e é transformador. Se quiser um nome moderninho, também
+                    pode nos chamar de traveltech. Venha com a gente!</p>
+                <br>
+                <a class="btn btn-primary" href="#" id="botao-sobre-nos">Saiba mais</a>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <img src="imagem/viagem.jpg" alt="avião voando ao pôr-do-sol" class="img-fluid" id="foto-sobre-nos">
+            </div>
         </div>
-        
-        <hr>
     </div>
-</div>
 
- <!--- Cards -->
- <div class="container-fluid padding">
-    <div class="row padding">
-      <div class="col-sm-9 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team1.png" alt="Rodrigo">
-          <div class="card-body">
-            <h4 class="card-title">Rodrigo Rangel</h4>
-            <p>Zé é um engenheiro de software com 20 anos de experiência.</p>
-            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-          </div>
+    <br>
+    <hr class="my-4">
+
+    <!--- Conheça o time -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Conheça nosso time</h1>
+            </div>
+
+            <hr>
         </div>
-      </div>
+    </div>
 
-      <div class="col-sm-9 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team1.png" alt="Ana Clara">
-          <div class="card-body">
-            <h4 class="card-title">Ana Clara</h4>
-            <p>Moça é uma designer entendida com 10 anos de pé na estrada.</p>
-            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-          </div>
-        </div>
-      </div>
+    <!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding justify-content-center">
+            <div class="col-sm-9 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagem/clara2.jpg" alt="Ana Clara" height="330px">
+                    <div class="card-body">
+                        <h4 class="card-title">Ana Clara</h4>
+                        <p>Engenheira de materiais, bailarina clássica, musicista amadora, agora também busca
+                            trilhar seu caminho no desenvolvimento web para buscar novos desafios.</p>
+                        <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
 
-      <div class="col-sm-9 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team1.png" alt="Milan">
-          <div class="card-body">
-            <h4 class="card-title">Milan</h4>
-            <p>Ricardão é um empresário  com 5 aninhos de coisinhas.</p>
-            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-          </div>
-        </div>
-      </div>
+            <div class="col-sm-9 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagem/rangel.jpeg" alt="Rodrigo Rangel" height="330px">
+                    <div class="card-body">
+                        <h4 class="card-title">Rodrigo Rangel</h4>
+                        <p>Jovem e apaixonado Cientista de Dados que hoje desafia-se no mundo
+                            do Desenvolvimento Web. "A vida é bela, mas só pra quem tem coragem".</p>
+                        <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
 
-      <div class="col-sm-9 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team1.png" alt="Giuliano">
-          <div class="card-body">
-            <h4 class="card-title">Giuliano</h4>
-            <p>Ricardão é um empresário  com 5 aninhos de coisinhas.</p>
-            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-          </div>
-        </div>
-      </div>
+            <div class="col-sm-9 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/team1.png" alt="Milan">
+                    <div class="card-body">
+                        <h4 class="card-title">Milan</h4>
+                        <p>Ricardão é um empresário com 5 aninhos de coisinhas.</p>
+                        <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
 
-      <div class="col-sm-9 col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="img/team1.png" alt="Lincoln">
-          <div class="card-body">
-            <h4 class="card-title">Lincoln</h4>
-            <p>Ricardão é um empresário  com 5 aninhos de coisinhas.</p>
-            <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
-          </div>
-        </div>
-      </div>
+            <div class="col-sm-9 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/team1.png" alt="Giuliano">
+                    <div class="card-body">
+                        <h4 class="card-title">Giuliano</h4>
+                        <p>Ricardão é um empresário com 5 aninhos de coisinhas.</p>
+                        <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
 
-<!--- Two Column Section -->
+            <div class="col-sm-9 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="imagem/Lincoln.jpeg" alt="Lincoln" height="430px">
+                    <div class="card-body">
+                        <h4 class="card-title">Lincoln</h4>
+                        <p>Estudante de engenharia da computação no Insper, amante e apreciador de jogos.
+                             Busca aprender e se aprofundar mais em programação front e back-end. 
+                             Mais novo desafio é o Desenvolvimento Web</p>
+                        <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--- Two Column Section -->
 
 
-<!--- Connect -->
+            <!--- Connect -->
 
 
-<!--- Footer -->
+            <!--- Footer -->
 
 
 
