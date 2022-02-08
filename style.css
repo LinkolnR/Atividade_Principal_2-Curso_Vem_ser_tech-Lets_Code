@@ -1,18 +1,30 @@
+/*--Fonte da página--*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/*--geral--*/
+
+html {
+  scroll-behavior: smooth;
+}
 
 html, body {
     height: 100%;
     width: 90%;
     font-family: 'Poppins', sans-serif;
     color: #222;
-    }
+}
 
 body {
     margin: 0 10%;
+    background-color: #ece5f0;
 }
+
+/*--navbar--*/
 
 .navbar {
     padding: .8rem;
+    background-color: #e5e9f0 !important;
 }
 
 .navbar-nav li {
@@ -23,6 +35,8 @@ body {
     font-size: 1.1em !important;
 }
 
+/*-- Carrousel --*/
+
 .carousel-inner img {
     height: 100%;
     width: 100%;
@@ -30,25 +44,67 @@ body {
 
 .carousel-caption {
     position: absolute;
-    top: 50%;
+    /*top: 50%;*/
     margin: auto;
+    padding-bottom: 0;
 }
 
 .carousel-caption h1, .carousel-caption h3 {
     text-shadow: 1px 1px 10px #000;
 }
 
+.seletor{
+    padding: 0 2rem;
+    padding-top: 2rem;
+}
+
+#slides{
+    padding-top: 100px;
+}
+
+/*-- Catálogo --*/
+
+.display-4 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.texto-pequeno {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.preco {
+    font-weight: 600;
+    margin-right: 80px;
+}
+
+/*--Sobre nós--*/
+
 .card {
     margin: 0 auto; 
     float: none; 
     margin-bottom: 10px;
     border-radius: 10px;
+    background-color: #f9f7fa;
 }
 
+.dimensoes{
+    width: 286px;
+    height: 183.96px;
+}
+
+.dimensoes-perfil{
+    width: 286px;
+    height: 286.12px;
+}
 
 .card-img-top {
     border-radius: 10px;
-    
 }
 
 #foto-sobre-nos {
@@ -71,90 +127,115 @@ body {
     justify-content: center;
 }
 
-
 .texto-integrantes {
     text-align: justify;
 }
 
-/*---Media Queries --*/
-@media (max-width: 992px) {
+/*Formulário*/
 
-  }
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
-  
+.padding-around-20px {
+  padding: 20px;
 }
 
+.box-shadow {
+  box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
 
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
+.border-radius {
+  border-radius: 10px;
 }
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.background-image {
+  background-image: url(./imagem/pexels-mia-steinkirch-3894157.jpg);
   background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
 }
+
+.background-white {
+  background-color: #f9f7fa;
+}
+
+.flex-test {
+  display: flex;
+  flex-direction: column;
+}
+
+/*--Tabela--*/
+
+table, th, td {
+    background-color: #f9f7fa;
+    text-align: center;
+}
+
+/*--Botões azuis e hover--*/
+
+.btn-primary {
+  background-color: #2429aa;
+  border: 1px solid #ece5f0;
+}
+
+.btn-primary:hover {
+  background-color: #ece5f0;
+  border: 1px solid #2429aa;
+  color: #2429aa;
+}
+
+/* ---Footer--- */
+#Contato {
+    background-color: #e5e9f0;
+    opacity: 0.7;
+}
+
+#Contato p {
+    font-size: 14px;
+}
+
+#Contato h5 {
+    font-size: 16px;
+}
+
+#logo-footer {
+    height: 70px;
+}
+
+/*---Media Queries --*/
+/* @media screen and (max-width: 992px) {
+
+  } */
+@media screen and (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 40px;
+    }
+    .carousel-caption h3 {
+      font-size: 18px;
+    }  
+}
+@media screen and (max-width: 576px) {
+    .carousel-caption h1 {
+      font-size: 23px;
+    }
+    .carousel-caption h3 {
+      font-size: 11px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .carousel-caption h1 {
+      font-size: 15px;
+    }
+    .carousel-caption h3 {
+      font-size: 8px;
+    }
+}
+
+/*--Seções  - acertar espaçamento--*/
+.espaco-abaixo {
+  padding: 3rem 2rem;
+}
+
+main hr{
+    padding-top: 50px
+}
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 1rem;
 }
-
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
-
-
-
-
